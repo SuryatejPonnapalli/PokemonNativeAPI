@@ -33,6 +33,9 @@ const App = () => {
         </View>
       )
     }}
+    ItemSeparatorComponent={<View style={{height:16}}></View>}
+    ListHeaderComponent={<Text style={ styles.headerText }>Pokemon List</Text>}
+    ListFooterComponent={<Text style={styles.footerText}>End of Pokemon List</Text>}
     />
     </View>
   </SafeAreaView>
@@ -58,6 +61,16 @@ const styles = StyleSheet.create({
   cardText:{
     fontSize: 30,
     color: 'black'
+  },
+  headerText:{
+    fontSize: 24,
+    textAlign: 'center',
+    marginBottom: 12
+  },
+  footerText:{
+    fontSize: 12,
+    textAlign: 'center',
+    marginTop: 12
   }
 })
 
